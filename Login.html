@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="contenedor">
+            <!-- NO ES NECESARIO DE FIELDSET Y DE LEGEND: son pocos parámetros a pedir en el formulario -->
+
+            <form class="formulario">
+                <span class="formulario-titulo">Iniciar Sesión</span>
+
+                <label for="usuario">
+                    <input class="formulario-input formulario-input_text formulario-input_text-1" id="usuario" type="text" placeholder="Tu Usuario">
+                </label>
+
+                <label for="contrasena">
+                    <input class="formulario-input formulario-input_text formulario-input_text-2" id="contrasena" type="password" placeholder="Tu Contraseña">
+                </label>
+
+                <div class="formulario_utilidades">
+                    <div class="recordarme">
+                        <input type="checkbox" id="recordarme">
+                        <label for="recordarme">Recordarme</label>
+                    </div>
+
+                    <a href="#" class="formulario-link">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <input class="formulario-input formulario-submit" type="submit" value="Ingresar">
+
+                <span>¿No tienes una cuenta? <a href="#" class="formulario-link formulario-link_last">Regístrate</a></span>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
