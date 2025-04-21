@@ -1,0 +1,191 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --gris: rgb(66, 66, 66);
+    --grisAlpha: rgba(225, 225, 225, 0.5);
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+label {
+    user-select: none;
+    /* Evita que se seleccione el texto */
+}
+
+/* === */
+
+.contenedor {
+    /* Ocupar alto y ancho para centrar */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/star.webp);
+    background-position: center;
+    background-size: cover;
+    /* Cubre la imagen en el espacio que tenga, contain: mantiene la imagen sin recortes */
+    background-repeat: no-repeat;
+}
+
+.contenedor-formularios {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    width: min(93%, 40rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    /* FUENTE */
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    color: var(--blanco);
+    text-align: center;
+
+    /* VISUAL EFFECTS */
+    padding: 3.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--grisAlpha);
+}
+
+.formulario-registrarse {
+   max-height: 44.1rem;
+}
+.formulario-iniciar {
+   min-height: 44.1rem;
+}
+
+.formulario-iniciar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario-titulo {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.formulario label {
+    width: 100%;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+/* INPUT */
+
+.formulario-input {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.7rem;
+
+    /* VISUAL EFFECTS */
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+}
+
+.formulario-input_text {
+    color: var(--blanco);
+
+    margin-top: 1.8rem;
+    background: transparent;
+    border: .1rem solid var(--grisAlpha);
+}
+
+.formulario-input_text:hover {
+    outline: .2rem solid var(--blanco);
+}
+
+.formulario-input_text:focus {
+    outline: .2rem solid var(--blanco);
+}
+
+.formulario-input_text::placeholder {
+    color: var(--grisAlpha);
+}
+
+.formulario-input_text-1,
+.formulario-input_text-2 {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+
+.formulario-input_text-1 {
+    background-image: url(../img/user.svg);
+}
+
+.formulario-input_text-2 {
+    background-image: url(../img/lock.svg);
+}
+
+.formulario-submit {
+    border: none;
+    color: var(--gris);
+    background: var(--blanco);
+
+    transition: background .4s ease;
+    cursor: pointer;
+}
+
+.formulario-registrarse .formulario-submit {
+    margin-top: 2rem;
+ }
+
+.formulario-submit:hover {
+    color: var(--negro);
+    background: var(--grisAlpha);
+}
+
+.formulario_utilidades {
+    font-size: 1.45rem;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.recordarme {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.formulario_utilidades a { /* Olvidaste tu contraseña */
+    text-align: right;
+}
+
+.formulario-link {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.formulario-link_last {
+    font-weight: 500;
+}
+
+/* UTILIDADES */
