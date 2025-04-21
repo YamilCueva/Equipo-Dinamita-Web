@@ -38,11 +38,16 @@ label {
     justify-content: center;
     align-items: center;
 
-    background-image: url(../src/img/star.webp);
+    background-image: url(../img/star.webp);
     background-position: center;
     background-size: cover;
     /* Cubre la imagen en el espacio que tenga, contain: mantiene la imagen sin recortes */
     background-repeat: no-repeat;
+}
+
+.contenedor-formularios {
+    display: flex;
+    justify-content: center;
 }
 
 .formulario {
@@ -64,6 +69,19 @@ label {
     border-radius: 1rem;
     backdrop-filter: blur(10px);
     border: 1px solid var(--grisAlpha);
+}
+
+.formulario-registrarse {
+   max-height: 44.1rem;
+}
+.formulario-iniciar {
+   min-height: 44.1rem;
+}
+
+.formulario-iniciar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .formulario-titulo {
@@ -133,20 +151,22 @@ label {
     cursor: pointer;
 }
 
+.formulario-registrarse .formulario-submit {
+    margin-top: 2rem;
+ }
+
 .formulario-submit:hover {
     color: var(--negro);
     background: var(--grisAlpha);
 }
 
-
-/* OTROS */
-
 .formulario_utilidades {
-    width: 100%;
     font-size: 1.45rem;
-
+    
     display: flex;
     justify-content: space-between;
+    margin-top: 3rem;
+    width: 100%;
 }
 
 .recordarme {
