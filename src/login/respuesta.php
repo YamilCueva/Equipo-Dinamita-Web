@@ -8,7 +8,16 @@
 </head>
 
 <body>
-    <h1>Respuesta</h1>
+    <h1>Ingresastes al Sistemas</h1>
+    <a href="login.php">Salir</a>
+    <header>
+        <nav>
+            <a href="">Productos</a>
+            <a href="">Ventas</a>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>

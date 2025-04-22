@@ -55,7 +55,7 @@
                         </label>
                         <div class="formulario_utilidades">
                             <div class="recordarme">
-                                <input type="checkbox" id="recordarme" value="seleccionar">
+                                <input type="checkbox" id="recordarme" name="seleccionar" value="aceptado">
                                 <label for="recordarme">Recordarme</label>
                             </div>
                             <a href="#" class="formulario-link">¿Olvidaste tu contraseña?</a>
@@ -63,7 +63,7 @@
                     </div>
 
                     <div>
-                        <input class="formulario-input formulario-submit" type="submit" name="seleccionar[]">
+                        <input class="formulario-input formulario-submit" type="submit" value="Enviar">
                         <span>¿No tienes una cuenta? <a href="#"
                                 class="formulario-link formulario-link_last">Regístrate</a></span>
                     </div>
